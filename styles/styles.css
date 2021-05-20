@@ -1,0 +1,97 @@
+*{
+    padding:0 ;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    background-color: #674698;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #54674d;
+background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.calculadora-grilla {
+    
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: 170px repeat(5,75px);
+    background-color: #FF9671;
+    padding: 15px;
+    border-radius: 34px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+    
+
+
+    
+}
+
+.calculadora-grilla > button {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #FF9671 ;
+    font-size: 1.5rem;
+    border: none;
+    margin: 5px;
+    border-radius: 32px;
+    box-shadow: 5px 5px 10px -3px #00000040 , -5px -5px 15px 3px #00ffc11f;
+ outline: none;
+}
+
+.calculadora-grilla > :hover {
+    opacity: 0,9;
+background-color: rgb(143, 143, 143);
+position : relative;
+    
+}
+.resultado :hover {
+    opacity: 0,9;
+    position: absolute;
+}
+
+.resultado {
+grid-column: 1 / -1;
+background-color: #FF9671;
+display: flex ;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+padding: 19px;
+word-wrap: break-word;
+word-break: break-all;
+
+}
+
+
+
+
+.resultado .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+    padding: 10px;
+ 
+
+}
+
+
+.pie {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background: linear-gradient(to right , violet, blue);
+}
+
+
